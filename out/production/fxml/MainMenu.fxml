@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.prison.controller.MainMenuController" 
+            style="-fx-background-color: #000000;">
+    
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #1a1a1a; -fx-padding: 30;">
+            <Label text="Prison Management System" style="-fx-text-fill: #ffffff;">
+                <font>
+                    <Font name="System Bold" size="36" />
+                </font>
+            </Label>
+            <Label text="Manage Your Prison Operations Efficiently" style="-fx-text-fill: #cccccc;">
+                <font>
+                    <Font size="16" />
+                </font>
+            </Label>
+        </VBox>
+    </top>
+    
+    <center>
+        <GridPane hgap="20" vgap="20" alignment="CENTER" style="-fx-padding: 40;">
+            
+            <Button text="Register Inmate" onAction="#openRegisterInmate" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Manage Staff" onAction="#openManageStaff" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Assign Work" onAction="#openAssignWork" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Manage Resources" onAction="#openManageResources" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Medical Checkup" onAction="#openMedicalCheckup" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Monitor Attendance" onAction="#openMonitorAttendance" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Incident Report" onAction="#openIncidentReport" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Record Movement" onAction="#openRecordMovement" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+            
+            <Button text="Release Inmate" onAction="#openReleaseInmate" 
+                    prefWidth="250" prefHeight="80" 
+                    style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10; -fx-cursor: hand;"
+                    GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <font>
+                    <Font name="System Bold" size="16" />
+                </font>
+            </Button>
+        </GridPane>
+    </center>
+    
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #1a1a1a; -fx-padding: 20;">
+            <Label text="© 2024 Prison Management System. All Rights Reserved." 
+                   style="-fx-text-fill: #cccccc;">
+                <font>
+                    <Font size="12" />
+                </font>
+            </Label>
+        </VBox>
+    </bottom>
+    
+</BorderPane>
